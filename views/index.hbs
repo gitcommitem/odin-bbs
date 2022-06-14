@@ -1,2 +1,15 @@
+<nav class="hflex">
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<a class="button-link" href="/new"> 💌 Write a message 💌</a>
+</nav>
+
+
+<section>
+{{#each message}}
+<div class="msg">
+  <p class="name">{{this.user}}</p>
+  <p class="text">{{this.text}}</p>
+  <p class="timestamp">{{this.timestamp}}</p>
+</div>
+{{/each}}
+</section>
