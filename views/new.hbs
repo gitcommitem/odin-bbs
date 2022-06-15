@@ -4,14 +4,14 @@
 
 <section>
   <div id="form-cont">
-     <form class="vflex">
+     <form class="vflex" method="POST" action="/new">
     <div class="vflex">
     <label for="name">Name</label>
-    <input type="text" id="name"/>
+    <input type="text" id="name" name="name"/>
     </div>
     <label for="text">Message</label>
-    <textarea id="text"></textarea>
-    <button>💌 Send message 💌</button>
+    <textarea id="text" name="text"></textarea>
+    <button type="submit">💌 Send message 💌</button>
   </form>
   </div>
  

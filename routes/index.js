@@ -29,4 +29,14 @@ router.get('/new', function (req, res, next) {
   res.render('new', { title: 'Guestbook' });
 });
 
+router.post('/new', function (req, res, next) {
+  const { name, text } = req.body;
+  messages.push({
+    text: text,
+    user: name,
+    timestamp: new Date()
+  });
+  res.redirect('/');
+});
+
 module.exports = router;

@@ -33,6 +33,13 @@ nav {
 
 section {
   max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#msg-cont {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 a.button-link,
