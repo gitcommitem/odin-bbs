@@ -2,8 +2,9 @@
   "name": "odin-bbs",
   "version": "0.0.0",
   "private": true,
+  "engines": { "node": "v16.14.2" },
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
